@@ -35,3 +35,28 @@ plt.legend() #Display the label set in the .plot()
 plt.savefig("first.png", dpi=200) #We can save the graph and choose the dpi we want to save it.
 
 plt.show()
+
+
+#Bar graph
+
+#Most functions are the same as with line graph
+
+#Cities visited by country
+labels = ["US", "Brazil", "Italy"]
+values = [10, 7, 12]
+
+bar = plt.bar(labels, values, color="purple")
+plt.title("Cities visited around the world", fontdict={"fontname": "Times New Roman", "fontsize": 20})
+
+plt.xlabel("countries")
+plt.ylabel("amount visited")
+
+plt.yticks(range(15))
+
+bar[0].set_hatch('O') #Customise the bars. Striped, full of circles, ect...
+bar[1].set_hatch('*')
+bar[2].set_hatch('/')
+
+
+#plt.savefig("cities-visited.png", dpi=200)
+plt.show()
