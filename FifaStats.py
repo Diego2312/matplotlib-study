@@ -62,7 +62,7 @@ plt.title("Fifa 18 player position distribution", fontdict={"fontweight": "bold"
 plt.xlabel("")
 plt.ylabel("")
 
-plt.savefig("Fifa-18-player-position-distribution.png")
+#plt.savefig("Fifa-18-player-position-distribution.png")
 
 plt.show()
 
